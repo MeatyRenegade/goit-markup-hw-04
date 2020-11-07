@@ -64,6 +64,8 @@ body {
 }
 
 .link-header {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -136,12 +138,7 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--hero-backg-cl);
-  background-image: radial-gradient(
-      circle at center,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../img/herobackgrund.jpg);
+  background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/herobackgrund.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -199,8 +196,7 @@ body {
   border-radius: 4px;
   color: var(--fill-in-color);
   background-color: var(--hover-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .footer-bg {
@@ -251,8 +247,7 @@ body {
   width: 270px;
   height: 428px;
   background: var(--fill-in-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -297,8 +292,7 @@ body {
 }
 
 .grid-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .ourworks-desc {
@@ -452,6 +446,33 @@ body {
 .contact-list {
   display: flex;
 }
+
+.mailto-svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.link-header:hover .mailto-svg,
+.link-header:focus .mailto-svg {
+  fill: var(--hover-color);
+}
+
+.tel-svg {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.link-header:hover .tel-svg,
+.link-header:focus .tel-svg {
+  fill: var(--hover-color);
+}
+
+/* .contacts-box {
+  display: inline-block;
+  align-items: center;
+} */
 
 .contact-list-header {
   font-weight: 700;
