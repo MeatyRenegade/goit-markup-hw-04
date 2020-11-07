@@ -7,6 +7,7 @@
   --opacity-color: rgba(255, 255, 255, 0.6);
   --wwd-backgr: #f5f4fa;
   --features-color: #e5e5e5;
+  --clients-list-color: #afb1b8;
 }
 
 html {
@@ -135,6 +136,10 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--hero-backg-cl);
+  background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/herobackgrund.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-header {
@@ -284,6 +289,10 @@ body {
   margin-bottom: 30px;
 }
 
+.grid-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .ourworks-desc {
   font-size: 16px;
   line-height: 1.87;
@@ -383,4 +392,91 @@ body {
   padding-bottom: 20px;
   padding-left: 24px;
   font-size: 16px;
+}
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--fill-in-color);
+}
+
+.clients-list {
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .clients-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-right: 30px;
+  fill: var(--clients-list-color);
+} */
+
+.client-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-right: 30px;
+  fill: var(--clients-list-color);
+}
+
+.clients-list-item:last-child {
+  margin-right: 0;
+}
+
+.contact-list {
+  display: flex;
+}
+
+.clients-list-svg {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 170px;
+}
+
+.contact-list-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--fill-in-color);
+  margin-top: 12px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+}
+
+.social-icons {
+  display: flex;
+  padding: 0;
+}
+
+.social-icons-item {
+  list-style: none;
+  fill: var(--fill-in-color);
+}
+
+.social-icons-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
 }
